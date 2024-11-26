@@ -1,0 +1,31 @@
+<h1>Demonstration of ngIf Structural Directive</h1>
+
+<h2>Hello World</h2>
+
+<h2 *ngIf = "true">Good Morning</h2>
+
+<h2 *ngIf = "false">Goof Night</h2>
+
+<h2 *ngIf = "bFlag">Angular Web Development</h2>
+
+<h2 *ngIf = "veg">Please check below menu</h2>
+
+<!-- tag -> template reference variable --> 
+<ng-template #vegMenu>
+  <h2>Panner Masala</h2>
+  <h2>Panner Lababdar</h2>
+  <h2>Veg Kolhapuri</h2>
+  <h2>Veg Maratha</h2>
+</ng-template>
+
+<ng-template #nonvegMenu>
+  <h2>Chicken Masala</h2>
+  <h2>Chicken Lababdar</h2>
+  <h2>Chicken Tikka</h2>
+  <h2>Chicken Biryani</h2>
+</ng-template>
+
+<!-- div -> club/group multiple html tag -->
+<div *ngIf = "FoodOption ; then vegMenu ; else nonvegMenu"></div>
+
+<router-outlet></router-outlet>
