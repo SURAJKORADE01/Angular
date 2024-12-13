@@ -10,6 +10,7 @@ import { HttpClient } from '@angular/common/http'; // Http ha Client side la lag
 import { batches } from './batches';  // rikama taat -> interface import kela -> yenara data kasa aahe hai sangnyasathi
 import { Observable } from 'rxjs';  // To use observable, we have to use third party library called -> Reactive Extensions (rxjs)
 
+// @Injectable -> class cha obejct create karun dusrya class chya constructor la as a parameter deu shakto
 @Injectable({
   providedIn: 'root'
 })
@@ -34,7 +35,7 @@ export class BatchesService
 
 // Constructor chya aat lihila tr te DI hota 
 
-// Service madhe HttpClient navacha component ghustoy
+// Service madhe HttpClient navacha component ghustoy/inject hotoy
 // Service hi BatchDetails aani BatchList madhe inject hote
 
 // 3 Dependency Injection -> 
