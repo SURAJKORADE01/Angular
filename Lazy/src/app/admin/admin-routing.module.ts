@@ -11,7 +11,7 @@ const routes: Routes = [
 ];
 
 // Required to control internal routing
-// @NgModule directive madhe aapn lihila kela -> konta karta tr forChild(routes)
+// @NgModule directive madhe aapn lihila kela -> kona karta tr forChild(routes)
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

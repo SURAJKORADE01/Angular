@@ -1,18 +1,19 @@
 express = require("express");
+// npm install cors
 cors = require("cors");
 eobj = express();
 port = 8000;
 
 //////////////////////////////////////////////////
-// Handling CORS
+// Handling CORS -> explicit handling
 
 // eobj.use(cors({
-//     origin: "http://localhost:4200",
+//     origin: "http://localhost:4200",  -> ithun request aali tr data dya -> listence check kartoy
 //     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
 //     allowedHeaders: ["Origin", "X-Requested-With", "Content-Type", "Accept"]
 // }));
 
-eobj.use(cors());
+eobj.use(cors());       // implicitt handling
 
 //////////////////////////////////////////////////
 

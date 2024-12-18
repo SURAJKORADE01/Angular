@@ -11,6 +11,8 @@ import { CommonModule } from '@angular/common'; // for *ngFor
   providers : [BatchesService]    // optional aahe -> kontya hi angular version la code run honya sathi -> constructor la lagnari entry providers array madhe aaste
 })
 
+// Design Pattern cha naav aahe -> Dependency Injection 
+
 export class BatchlistComponent 
 {
   // rikami pishvi
@@ -18,7 +20,7 @@ export class BatchlistComponent
 
   // Batchlist component ne BatchService hya service la DI use karun swata madhe inject kela
   
-  // Constructor madhun aapn BatchService madhe aasnarya service la subscribe kela
+  // Constructor madhun aapn BatchService madhe aasnarya service la subscribe kela -> joh compponent subscribe karel tyalach service data deil
   public constructor(private sobj : BatchesService)
   {                              // input parameter data => this.batches madhe data de
     sobj.GetBatches().subscribe(data => this.batches = data);

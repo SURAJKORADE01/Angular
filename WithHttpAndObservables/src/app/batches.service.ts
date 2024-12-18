@@ -12,15 +12,16 @@ import { Observable } from 'rxjs';  // To use observable, we have to use third p
 
 // @Injectable -> class cha obejct create karun dusrya class chya constructor la as a parameter deu shakto
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root' // -> Service hi root component pasun saglyanna dili janaar manun root 
 })
 
 export class BatchesService 
 {
-  private url = "/assets/data/batchesdb.json";  // database path -> Instead of this path -> MongoDB path
-  
+  private url = "/assets/data/batchesdb.json";  // Server path -> Instead of this path -> Server cha path
+
+                    // constructor chya aat Module la inject karto
   public constructor(private http : HttpClient) { 
-                    // DI aahe -> HttpClient chya Module cha DI aahe          
+                    // DI aahe -> HttpClient Module cha DI aahe          
   }  
                         
   //                    yenare data ha batches array madhe transform kela -> interface -> rikama taat bharun aala
@@ -35,7 +36,9 @@ export class BatchesService
 
 // Constructor chya aat lihila tr te DI hota 
 
-// Service madhe HttpClient navacha component ghustoy/inject hotoy
+// Sentence -> Service chya constructor madhe HttpClient Module hi inject hote using DI -> use this sentence
+
+// Service madhe HttpClient navacha module ghustoy/inject hotoy
 // Service hi BatchDetails aani BatchList madhe inject hote
 
 // 3 Dependency Injection -> 
@@ -63,4 +66,3 @@ export class BatchesService
 // Observable help to manage Asynchrously data, as data is coming from backend service and server.
 
 // Observable are used within Angular itself, including Angular's event systems and its HTTP client service.
-

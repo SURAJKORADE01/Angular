@@ -5,7 +5,7 @@
 // c++ -> using namespace
 // java, tyepscript -> import
 
-// express = -> keyword
+// express = -> keyword/variable
 // require -> load from outside
 // "express" -> load this
 express = require("express");   // express la load kela
@@ -13,7 +13,7 @@ express = require("express");   // express la load kela
 // express cha object create kela 
 eobj = express();      
 
-// server ha 5100 port number la active aasel -> port -> application hai internet connect karnyasathi port number dila jato
+// server ha 5100 port number la active aasel -> port -> application hai internet la connect karnyasathi port number dila jato
 port = 5100;        
 
 // function automatically call hoil whenever server is start 

@@ -12,13 +12,13 @@ import { MarvellousService } from './marvellous.service';
 export class AppComponent implements OnInit
 {
   public message : any;
-
+                            // service -> object name         MarvellousService hi service inject keli using DI
   public constructor(private service : MarvellousService)
   {
     
   }
 
-  // Interface aahe -> This method gets automatically called when the component gets created.
+  // Interface aahe -> This method gets automatically called when the component gets redered.
   ngOnInit(): void 
   {
     this.service.getBatches().subscribe(data=>{

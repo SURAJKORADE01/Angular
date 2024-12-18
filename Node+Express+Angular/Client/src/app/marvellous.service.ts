@@ -10,6 +10,7 @@ export class MarvellousService
   public url = "http://localhost:8000/getBatches";
 
   //  DI of HTTP
+                          //  http -> Object name
   public constructor(private http : HttpClient) { }
 
   public getBatches() 
