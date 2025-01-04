@@ -29,7 +29,7 @@ export class BatchesService
   public GetBatches() : Observable<batches[]> // typecast -> yenara data array of batches 
   {
     // http -> object -> tyat li get method call keli -> data ha this.url madhun aan
-    // <batches[]> -> yenara data ha typecase kela into array of batches -> karan yenara data ha sequence of bytes madhe yeto tyala tukde karun ghetla 
+    // <batches[]> -> yenara data ha typecast kela into array of batches -> karan yenara data ha sequence of bytes madhe yeto tyala tukde karun ghetla 
     return this.http.get<batches[]>(this.url);
   }
 }

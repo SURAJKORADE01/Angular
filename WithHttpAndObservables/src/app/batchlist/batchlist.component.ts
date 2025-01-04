@@ -20,7 +20,7 @@ export class BatchlistComponent
 
   // Batchlist component ne BatchService hya service la DI use karun swata madhe inject kela
   
-  // Constructor madhun aapn BatchService madhe aasnarya service la subscribe kela -> joh compponent subscribe karel tyalach service data deil
+  // Constructor madhun aapn BatchService madhe aasnarya service la subscribe kela -> joh component subscribe karel tyalach service data deil
   public constructor(private sobj : BatchesService)
   {                              // input parameter data => this.batches madhe data de
     sobj.GetBatches().subscribe(data => this.batches = data);

@@ -21,10 +21,10 @@ import { Routes, RouterModule } from '@angular/router';
 // Ithe aapn sangto maze 2 child aahet -> admin,staff je ki module aahet i.e child module
 
 // app-routing.module.ts -> app module kadun admin or staff kade kasa jaicha hai ithun sangto
-// But admin module madhun kuthe jaicha hai admin-routig.module.ts file sangte
+// But admin module madhun kuthe jaicha hai admin-routing.module.ts file sangte
 
 // 1-> It is a global routing file -> child module la kasa jaicha hai sangte
-// 2-> admin la click kela tr ja admin/module.ts madhe hai aapn loadchildren madhe karun thevli
+// 2-> admin la click kela tr ja admin.module.ts madhe hai aapn loadchildren madhe karun thevli
 // 3-> aata control jato admin.module.ts
 // 4-> mg parat control la tyachya local routing file kade jato -> admin-routing.module.ts
 // 5-> titun konta component display karaycha hai path varun tharel
