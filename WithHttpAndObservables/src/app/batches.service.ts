@@ -59,7 +59,7 @@ export class BatchesService
 
 // get -> data gheun ye -> kuthun -> this.utl hya path varun 
 
-// By using the concepy of HTTP Client and Observable our Angular Application 
+// By using the concept of HTTP Client and Observable our Angular Application 
 // can send request to the server and server will send response as Observable.
 
 // Observable -> Observable is an array whose arrives Asynchrously over time.
